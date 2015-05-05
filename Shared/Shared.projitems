@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7c557a73-e10f-4978-af4f-403630f76f2e</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BindToExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\FactoryInterceptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\IFactoryProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\IInstanceProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\IInstanceResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\InstanceResolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\ProxyTargetParameter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\StandardInstanceProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factory\TypeMatchingArgumentInheritanceInstanceProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FuncModule.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\ArgumentPositionCalculator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\ConstructorInfoExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\FuncConstructorArgument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\FuncConstructorArgumentFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\FuncProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\FunctionFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\IArgumentPositionCalculator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Func\IFunctionFactory.cs" />
+  </ItemGroup>
+</Project>

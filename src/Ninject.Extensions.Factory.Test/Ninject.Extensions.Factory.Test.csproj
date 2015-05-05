@@ -66,10 +66,6 @@
     <Reference Include="Moq">
       <HintPath>..\..\tools\moq\NET40\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject, Version=2.3.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\..\lib\Ninject\net-4.0\Ninject.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -94,48 +90,7 @@
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Fakes\Barrack.cs" />
-    <Compile Include="Fakes\IBarrackFactory.cs" />
-    <Compile Include="Fakes\ClassWithCollectionFunc.cs" />
-    <Compile Include="Fakes\ClassWithLazy.cs" />
-    <Compile Include="Fakes\ClassWithParameterizedFunc.cs" />
-    <Compile Include="Fakes\CustomizableDagger.cs" />
-    <Compile Include="Fakes\CustomizableSword.cs" />
-    <Compile Include="Fakes\ClassWithFunc.cs" />
-    <Compile Include="FactoryTests.cs" />
-    <Compile Include="Fakes\Dagger.cs" />
-    <Compile Include="Fakes\FuncOverloadTestFake.cs" />
-    <Compile Include="Fakes\FuncOverloadTestImplementationFake.cs" />
-    <Compile Include="Fakes\IBarrack.cs" />
-    <Compile Include="Fakes\ISpecialWeaponFactory.cs" />
-    <Compile Include="Fakes\IWarrior.cs" />
-    <Compile Include="Fakes\IWarriorFactory.cs" />
-    <Compile Include="Fakes\Ninja.cs" />
-    <Compile Include="FuncTests.cs" />
-    <Compile Include="Fakes\IWeapon.cs" />
-    <Compile Include="Fakes\ICustomizableWeapon.cs" />
-    <Compile Include="Fakes\IWeaponFactory.cs" />
-    <Compile Include="Fakes\IMessageHandler.cs" />
-    <Compile Include="Fakes\IMessageHandlerFactory.cs" />
-    <Compile Include="Fakes\IntMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Fakes\Sword.cs" />
-    <Compile Include="UnitTests\ArgumentPositionCalculatorTests.cs" />
-    <Compile Include="UnitTests\FactoryInterceptorTests.cs" />
-    <Compile Include="UnitTests\FuncConstructorArgumentTests.cs" />
-    <Compile Include="UnitTests\FuncProviderTests.cs" />
-    <Compile Include="UnitTests\FunctionFactoryTests.cs" />
-    <Compile Include="UnitTests\InstanceResolverTests.cs" />
-    <Compile Include="UnitTests\IResolutionRootMockExtensions.cs" />
-    <Compile Include="UnitTests\ProxyTargetParameterTests.cs" />
-    <Compile Include="UnitTests\StandardInstanceProviderDefaultImplementationTests.cs" />
-    <Compile Include="UnitTests\StandardInstanceProviderTests.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ninject.Extensions.Factory\Ninject.Extensions.Factory.csproj">
-      <Project>{9831975F-FA35-4B8B-A545-1A06852625BB}</Project>
-      <Name>Ninject.Extensions.Factory</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

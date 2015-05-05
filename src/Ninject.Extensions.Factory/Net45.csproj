@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ninject.Extensions.Factory</RootNamespace>
     <AssemblyName>Ninject.Extensions.Factory</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\Ninject.snk</AssemblyOriginatorKeyFile>
@@ -34,7 +34,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,6 +48,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -57,14 +59,11 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>..\..\build\release\Ninject.Extensions.Factory.XML</DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.2.0\lib\net35\Castle.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Ninject, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\..\lib\Ninject\net-4.0\Ninject.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -83,25 +82,7 @@
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="Factory\IInstanceResolver.cs" />
-    <Compile Include="Factory\IInstanceProvider.cs" />
-    <Compile Include="Factory\InstanceResolver.cs" />
-    <Compile Include="Factory\StandardInstanceProvider.cs" />
-    <Compile Include="Factory\TypeMatchingArgumentInheritanceInstanceProvider.cs" />
-    <Compile Include="Func\ArgumentPositionCalculator.cs" />
-    <Compile Include="BindToExtensions.cs" />
-    <Compile Include="Func\ConstructorInfoExtensions.cs" />
-    <Compile Include="Factory\FactoryInterceptor.cs" />
-    <Compile Include="Func\FuncConstructorArgument.cs" />
-    <Compile Include="Func\FuncConstructorArgumentFactory.cs" />
-    <Compile Include="FuncModule.cs" />
-    <Compile Include="Func\FuncProvider.cs" />
-    <Compile Include="Func\FunctionFactory.cs" />
-    <Compile Include="Func\IArgumentPositionCalculator.cs" />
-    <Compile Include="Factory\IFactoryProxy.cs" />
-    <Compile Include="Func\IFunctionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Factory\ProxyTargetParameter.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -121,7 +102,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
