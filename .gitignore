@@ -21,3 +21,4 @@ _ReSharper.Ninject.Extensions.Factory with Silverlight and WP7 Unittesting
 bin
 obj
 packages
+StyleCop.Cache

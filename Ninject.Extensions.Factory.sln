@@ -21,9 +21,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40", "Net40\Net40.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net40.Facts", "Net40.Facts\Net40.Facts.csproj", "{331609B8-FFFB-4BFF-AC1C-6D46551724C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight50", "Silverlight50\Silverlight50.csproj", "{8F617CDE-8D38-4B17-8390-B117B70514FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight50.Facts", "Silverlight50.Facts\Silverlight50.Facts.csproj", "{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared.Facts\Shared.Facts.projitems*{331609b8-fffb-4bff-ac1c-6d46551724c9}*SharedItemsImports = 4
+		Shared\Shared.projitems*{8f617cde-8d38-4b17-8390-b117b70514fb}*SharedItemsImports = 4
+		Shared.Facts\Shared.Facts.projitems*{b1df2152-9daa-4083-86fe-9bb05f0c440e}*SharedItemsImports = 4
 		Shared.Facts\Shared.Facts.projitems*{27b0e551-ce23-41d8-84b2-25002a7f84bb}*SharedItemsImports = 13
 		Shared\Shared.projitems*{7c557a73-e10f-4978-af4f-403630f76f2e}*SharedItemsImports = 13
 		Shared\Shared.projitems*{59a83a5b-06a9-4e6d-a6f3-bfe0ee91d3ad}*SharedItemsImports = 4
@@ -51,6 +57,14 @@ Global
 		{331609B8-FFFB-4BFF-AC1C-6D46551724C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331609B8-FFFB-4BFF-AC1C-6D46551724C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331609B8-FFFB-4BFF-AC1C-6D46551724C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F617CDE-8D38-4B17-8390-B117B70514FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F617CDE-8D38-4B17-8390-B117B70514FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F617CDE-8D38-4B17-8390-B117B70514FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F617CDE-8D38-4B17-8390-B117B70514FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
