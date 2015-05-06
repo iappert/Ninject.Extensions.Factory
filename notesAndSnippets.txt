@@ -1,0 +1,14 @@
+net-4.0-client
+net-4.5
+silverlight-5.0
+mono-4.0
+
+msbuild /target:Rebuild /property:Configuration=Release .\Ninject.Extensions.Factory.sln
+nuget restore .\Ninject.Extensions.Factory.sln
+xbuild.exe .\Net45\Mono45.csproj /target:Rebuild /p:Configuration=Release
+xbuild.exe .\Net45.Facts\Mono45.Facts.csproj /target:Rebuild /p:Configuration=Release
+
+
+  <ItemGroup>
+    <Compile Include="..\Shared\**\*.cs" />
+  </ItemGroup>

@@ -25,6 +25,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight50", "Silverligh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight50.Facts", "Silverlight50.Facts\Silverlight50.Facts.csproj", "{B1DF2152-9DAA-4083-86FE-9BB05F0C440E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{28C8285D-BCA6-455F-AF00-AFA7B8A4409D}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Shared.Facts\Shared.Facts.projitems*{331609b8-fffb-4bff-ac1c-6d46551724c9}*SharedItemsImports = 4
