@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ninject.Extensions.Factory</RootNamespace>
-    <AssemblyName>Ninject.Extensions.Factory</AssemblyName>
+    <AssemblyName>Ninject.Extensions.Factory.Facts</AssemblyName>
     <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
@@ -85,8 +85,14 @@
     <Reference Include="xunit.extensions-silverlight">
       <HintPath>..\tools\xunit.sl\Silverlight-5.0\xunit.extensions-silverlight.dll</HintPath>
     </Reference>
+    <Reference Include="xunit.runner.silverlight">
+      <HintPath>..\tools\xunit.sl\Silverlight-5.0\xunit.runner.silverlight.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +103,15 @@
       <Project>{8f617cde-8d38-4b17-8390-b117b70514fb}</Project>
       <Name>Silverlight50</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <Import Project="..\Shared.Facts\Shared.Facts.projitems" Label="Shared" Condition="Exists('..\Shared.Facts\Shared.Facts.projitems')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
